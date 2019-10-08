@@ -21,4 +21,8 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
 
+  addToCart(product){
+    window.alert("Product has been added to the cart.");
+    this.cartService.addToCart(product);
+  }
 }
