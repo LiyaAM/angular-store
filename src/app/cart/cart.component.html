@@ -6,7 +6,7 @@
   <span> {{ item.name }} </span>
   <span> {{ item.price | currency }} </span>
 </div> 
-<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutFrom.value)">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
   <div>
     <label for="name">Name</label>
     <input type="texd" id="name" formControlName="name">
